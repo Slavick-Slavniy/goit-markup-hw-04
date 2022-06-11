@@ -143,7 +143,7 @@ img {
   margin-right: auto;
   text-align: center;
   background-color: #c4c4c4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
 }
 .section-title-hero {
@@ -196,7 +196,7 @@ img {
   background-position: center;
 }
 .icon-antenna::before {
-  background-image: url(../images/antenna\ 1.svg);
+  background-image: url(../images/antenna\ 1\ .svg);
 }
 .icon-clock::before {
   background-image: url(../images/clock\ 1.svg);
@@ -257,7 +257,7 @@ img {
 }
 .team-person {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 .title-person-name {
   font-weight: 500;
@@ -272,6 +272,43 @@ img {
   line-height: 1.18;
   text-align: center;
 }
+.social-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.social-item {
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+}
+.social-item:first-child {
+  margin-left: 0;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /* background-color: tomato; */
+  color: #afb1b8;
+}
+.social-icon {
+  fill: currentColor;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/* .social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: #ffffff;
+} */
+
 /* P-O-R-T-F-O-L-I-O */
 
 /* Filter buttton portfolio*/
@@ -311,6 +348,12 @@ img {
 }
 .project-list .item {
   flex-basis: calc((100% - 60px) / 3);
+}
+.project-list .item:hover,
+.project-list .item:focus {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project {
   padding-top: 20px;
