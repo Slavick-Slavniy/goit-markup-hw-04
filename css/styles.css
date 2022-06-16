@@ -119,6 +119,7 @@ img {
   padding-top: 21px;
   padding-bottom: 21px;
   line-height: 1.14;
+  margin-left: 10px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
@@ -126,9 +127,7 @@ img {
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
-.auth-nav .link::before {
-}
-.letter-link .smartphon-link {
+.item .link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,7 +136,14 @@ img {
   color: #afb1b8;
 }
 .letter-icon .smartphon-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
+.letter-icon .smartphon-icon:hover,
+.letter-icon .smartphon-icon:focus {
+  fill: var(--accent-color);
+}
+
 /* ---------------------------------------------------------------- */
 /* W-E-B-S-T-U-D-I-O */
 
@@ -304,7 +310,6 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  /* background-color: tomato; */
   color: #afb1b8;
 }
 .social-icon {
@@ -438,13 +443,11 @@ img {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-
   color: var(--secondary-text-color);
 }
 .address-list .item {
   margin-bottom: 9px;
 }
-
 .link-address {
   font-style: normal;
   font-size: 14px;
@@ -458,4 +461,47 @@ img {
 .link-address:hover,
 .link-address:focus {
   color: var(--accent-color);
+}
+.footer-soc-block {
+  display: flex;
+  justify-content: center;
+}
+.footer-soc-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+}
+.footer-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+}
+.footer-soc-item:first-child {
+  margin-left: 0;
+}
+.footer-soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+.footer-soc-icon {
+  fill: currentColor;
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
 }
