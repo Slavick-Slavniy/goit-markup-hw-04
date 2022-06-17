@@ -100,7 +100,6 @@ img {
   letter-spacing: 0.02em;
   flex-basis: calc((100% - 100px) / 3);
 }
-
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -135,15 +134,18 @@ img {
   height: 100%;
   color: #afb1b8;
 }
-.letter-icon .smartphon-icon {
+.letter-icon {
   fill: currentColor;
   margin-right: 10px;
 }
-.letter-icon .smartphon-icon:hover,
-.letter-icon .smartphon-icon:focus {
+.smartphonе-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.letter-icon .smartphonе-icon:hover,
+.letter-icon .smartphonе-icon:focus {
   fill: var(--accent-color);
 }
-
 /* ---------------------------------------------------------------- */
 /* W-E-B-S-T-U-D-I-O */
 
@@ -353,8 +355,12 @@ img {
 .client-icon {
   fill: #afb1b8;
 }
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid #2196f3;
+}
+.client-icon:hover,
+.client-icon:focus {
   fill: var(--accent-color);
 }
 
@@ -428,16 +434,19 @@ img {
 }
 
 /* Footer-------------------------------------------- */
+.footer .container {
+  display: flex;
+}
 .footer {
-  display: block;
+  /* display: block; */
   background-color: var(--secondary-backgroud-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  /* padding-top: 60px;
+  padding-bottom: 60px; */
 }
 .footer .logo {
   display: inline-block;
   margin-bottom: 20px;
-  /* padding-top: 60px; */
+  padding-top: 60px;
 }
 .address-list {
   font-style: normal;
@@ -463,10 +472,11 @@ img {
   color: var(--accent-color);
 }
 .footer-soc-block {
-  display: flex;
-  justify-content: center;
+  margin-left: 70px;
+  padding-top: 72px;
 }
 .footer-soc-title {
+  display: flex;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -475,10 +485,10 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  padding-bottom: 20px;
 }
 .footer-soc-list {
   display: flex;
-  justify-content: center;
 }
 .footer-soc-item {
   width: 44px;
@@ -495,7 +505,8 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  color: #afb1b8;
+  color: #ffffff;
+  background-color: #444552;
 }
 .footer-soc-icon {
   fill: currentColor;
